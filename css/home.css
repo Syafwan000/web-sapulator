@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #072638;
+}
+
+img {
+    width: 155px;
+    float: left;
+    margin-right: 35px;
+}
+
+.top {
+    padding-left: 45px;
+    padding-top: 35px;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Archivo Black', sans-serif;
+    text-shadow: 0 0 30px #fff;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.4em;
+    cursor: default;
+}
+
+h2 {
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 2px;
+    padding-bottom: 18px;
+    cursor: default;
+}
+
+a#button_nxt {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    background-color: #072638;
+    font-family: 'Trispace', sans-serif;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+}
+
+a#button_nxt:hover {
+    color: #072638;
+    background-color: #fff;
+    border: 3px solid #072638;
+}
+
+span {
+    color: rgb(233, 232, 187);
+    text-shadow: 0 0 30px rgb(233, 232, 187);
+}
+
+p {
+    color: #fff;
+    font-family: 'Trispace', sans-serif;
+    font-size: 14px;
+    margin-bottom: 35px;
+    cursor: default;
+}
+
+a#logout {
+    border: 3px solid #2196f3;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #2196f3;
+    font-family: 'Source Code Pro', monospace;
+}
+
+a#logout:hover {
+    border: 3px solid #2196f3;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background: #2196f3;
+    font-family: 'Source Code Pro', monospace;
+    box-shadow: 0 0 10px #2196f3, 0 0 10px #2196f3;
+}
+
+.hr {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 55px;
+}
+
+hr {
+    height: 5px;
+    border-radius: 20px;
+    border: 3px solid #2196f3;
+    background: #fff;
+    box-shadow: 0 0 20px #2196f3, 0 0 20px #2196f3;
+}
+
+#slider {
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+}
+
+#slider input[type="radio"] {
+    display: none;
+}
+
+#slider label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#slides {
+    padding: 10px;
+    border: 3px solid #fff;
+    background: none;
+    position: relative;
+    border-radius: 20px;
+    z-index: 10000000;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1:checked ~ #slides .inner {
+    margin-left: 0;
+}
+
+#slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+}
+
+#slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+}
+
+#slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+}
+
+#slide5:checked ~ #slides .inner {
+    margin-left: -400%;
+}
+
+#slide6:checked ~ #slides .inner {
+    margin-left: -500%;
+}
+
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    line-height: 0;
+    width: 625%;
+    height: 250px;
+}
+
+#slides .slide {
+    width: 16%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#slides .slide_1 {
+    background: #0057A0;
+}
+
+#slides .slide_2 {
+    background: #0067B0;
+}
+
+#slides .slide_3 {
+    background: #0077C0;
+}
+
+#slides .slide_4 {
+    background: #0287D0;
+}
+
+#slides .slide_5 {
+    background: #1297E0;
+}
+
+#slides .slide_6 {
+    background: #22A7F0;
+}
+
+#controls {
+    margin: -160px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+#controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+}
+
+#controls label:hover {
+    opacity: 1;
+}
+
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(5),
+#slide5:checked ~ #controls label:nth-child(6),
+#slide6:checked ~ #controls label:nth-child(1) {
+    background: url(../img/right-arrow.svg) no-repeat;
+    float: right;
+    margin: 0 -70px 0 0;
+    display: block;
+}
+
+#slide1:checked ~ #controls label:nth-last-child(1),
+#slide2:checked ~ #controls label:nth-last-child(6),
+#slide3:checked ~ #controls label:nth-last-child(5),
+#slide4:checked ~ #controls label:nth-last-child(4),
+#slide5:checked ~ #controls label:nth-last-child(3),
+#slide6:checked ~ #controls label:nth-last-child(2) {
+    background: url(../img/left-arrow.svg) no-repeat;
+    float: left;
+    margin: 0 0 0 -50px;
+    display: block;
+}
+
+#bullets {
+    margin: 130px 0 0;
+    text-align: center;
+}
+
+#bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #fff;
+    margin: 0 10px;
+}
+
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4),
+#slide5:checked ~ #bullets label:nth-child(5),
+#slide6:checked ~ #bullets label:nth-child(6) {
+    background: #fff;
+    border: 2px solid #2196f3;
+    box-shadow: 0 0 10px #2196f3;
+}
+
+@media all and (max-width: 900px) {
+    img {
+        float: none;
+        margin-right: 0;
+        width: 110px;
+    }
+    div.top {
+        padding: 35px 0px 0px 0px;
+        text-align: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    h1 {
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+    }
+    a#logout {
+        font-size: 13px;
+    }
+    .hr {
+        padding-top: 0px;
+        padding-bottom: 35px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    #bullets {
+        margin-bottom: 35px;
+    }
+    #bullets label {
+        width: 15px;
+        height: 15px;
+    }
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(5),
+    #slide5:checked ~ #controls label:nth-child(6),
+    #slide6:checked ~ #controls label:nth-child(1) {
+        margin: 0;
+    }
+    h2#hp {
+        letter-spacing: 0px;
+        font-size: 22px;
+    }
+
+}
+
+
+
+
+

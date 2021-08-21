@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #072638;
+}
+
+.container {
+    width: 100%;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+h1 {
+    font-family: 'Bree Serif', serif;
+    font-size: 40px;
+    margin-block-start: 0.75em;
+    margin-block-end: 0.45em;
+    color:#072638;
+    cursor: default;
+    width: 100%;
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 10px #fff;
+}
+
+h1#list {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+h1#list.over {
+    font-size: 16px;
+}
+
+i#logo {
+    font-size: 35px;
+    color: #072638;
+    background: #fff;
+    padding: 18px 20px 18px 20px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff;
+}
+
+p {
+    color: #fff;
+    font-family: 'Trispace', sans-serif;
+    font-size: 14px;
+    margin-bottom: 35px;
+    cursor: default;
+}
+
+span {
+    color: rgb(218, 215, 55);
+}
+
+p#text {
+    color: #000;
+}
+
+.center {
+    text-align: center;
+    font-family: 'Trispace', sans-serif;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.card {
+    width: 20%;
+    background: #fff;
+    margin-bottom: 50px;
+    border-radius: 50px;
+}
+
+.cardh {
+    text-align: center;
+    padding: 60px 10px;
+    background: #0067B0;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.cardb {
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.cardb .btn {
+    display: block;
+    border: 3px solid #0067B0;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #0067B0;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.btn:hover {
+    border: 3px solid #0067B0;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background: #0067B0;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hr {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 5px;
+}
+
+hr {
+    height: 10px;
+    border-radius: 20px;
+    border: 3px solid #2196f3;
+    background: #fff;
+    box-shadow: 0 0 20px #2196f3, 0 0 20px #2196f3;
+}
+
+a#close {
+    border: 3px solid #EA2027;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #EA2027;
+    font-family: 'Source Code Pro', monospace;
+}
+
+a#close:hover {
+    border: 3px solid #EA2027;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background: #EA2027;
+    font-family: 'Source Code Pro', monospace;
+    box-shadow: 0 0 15px #EA2027;
+}
+
+@media screen and (max-width: 1000px) {
+    .card {
+        width: 40%;
+    }
+    a#back {
+        font-size: 13px;
+    }
+    .heading {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .container {
+        width: 100%;
+    }
+    .heading {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .card {
+        width: 80%;
+    }
+    a#back {
+        font-size: 13px;
+    }
+    .heading {
+        margin-bottom: 50px;
+    }
+}

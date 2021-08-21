@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #072638;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Bree Serif', serif;
+    font-size: 40px;
+    margin-block-start: 0.75em;
+    margin-block-end: 0.45em;
+    color:#072638;
+    cursor: default;
+    width: 100%;
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 10px #fff;
+}
+
+input[type="submit"]#rumus {
+    border: 3px solid #05c46b;
+    border-radius: 25px;
+    padding: 8px 20px 8px 20px;
+    text-decoration: none;
+    color: #05c46b;
+    font-family: 'Source Code Pro', monospace;
+    background: #072638;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+input[type="submit"]#rumus:hover {
+    border: 3px solid #05c46b;
+    border-radius: 20px;
+    
+    text-decoration: none;
+    color: #fff;
+    background: #05c46b;
+    font-family: 'Source Code Pro', monospace;
+    box-shadow: 0 0 10px #05c46b, 0 0 10px #05c46b;
+}
+
+select#satuan {
+    width: 105px;
+    height: 28px;
+    font-family: 'Nunito', sans-serif;
+    border: 2px solid #2196f3;
+    border-radius: 5px;
+}
+
+select#satuan:active {
+    box-shadow: 0 0 10px #2196f3, 0 0 10px #2196f3;
+}
+
+table {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+label#label {
+    font-family: 'Trispace', sans-serif;
+    color: #fff;
+    line-height: 20px;
+    font-size: 14px;
+    cursor: default;
+}
+
+input[type="text"] {
+    border-radius: 20px;
+    height: 28px;
+    width: 165px;
+    text-align: center;
+    border: 3px solid #2196f3;
+    font-family: 'Trispace', sans-serif;
+}
+
+#hasil {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 28px;
+    margin-block-start: 0.25em;
+    margin-block-end: 0.25em;
+    color:#072638;
+    cursor: default;
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 10px #fff;
+    border-right: 5px solid #2196f3;
+    display: inline-block;
+    text-align: center;
+}
+
+input[type="submit"]#hitung {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2196f3;
+    font-family: 'Varela Round', sans-serif;
+    padding: 8px 15px 8px 15px;
+    border-radius: 50px;
+    font-size: 15px;
+    border: none;
+    width: 120px;
+    cursor: pointer;
+}
+
+input[type="submit"]#hitung:hover {
+    box-shadow: 0 0 10px #2196f3, 0 0 10px #2196f3;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff3f34;
+    font-family: 'Varela Round', sans-serif;
+    padding: 8px 20px 8px 20px;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+a:hover {
+    box-shadow: 0 0 10px #ff3f34, 0 0 10px #ff3f34;
+}
+
+@media all and (max-width: 920px) {
+    h2 {
+        font-size: 26px;
+    }
+    #hasil {
+        font-size: 20px;
+    }
+}

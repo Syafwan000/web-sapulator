@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap');
+
+body {
+    background-color: #072638;
+}
+
+.container {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.container2 {
+    width: 90%;
+    margin: 35px auto;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    color: #fff;
+    cursor: default;
+    margin-bottom: 25px;
+}
+
+h1#list {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+h1#list.over {
+    font-size: 16px;
+}
+
+i#logo {
+    font-size: 35px;
+    color: #072638;
+    background: #fff;
+    padding: 19px 20px 19px 20px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff;
+}
+
+p {
+    color: #fff;
+    font-family: 'Trispace', sans-serif;
+    font-size: 14px;
+    margin-bottom: 35px;
+    cursor: default;
+}
+
+p#text {
+    color: #000;
+}
+
+input[type="text"] {
+    border-radius: 20px;
+    height: 28px;
+    width: 200px;
+    text-align: center;
+    border: 3px solid #2196f3;
+    font-family: 'Trispace', sans-serif;
+}
+
+label#label {
+    font-family: 'Trispace', sans-serif;
+    color: #fff;
+    line-height: 20px;
+    font-size: 14px;
+    cursor: default;
+}
+
+#hasil {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 28px;
+    margin-block-start: 0.25em;
+    margin-block-end: 0.25em;
+    color:#072638;
+    cursor: default;
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+                0 0 10px #fff;
+    border-right: 5px solid #2196f3;
+    display: inline-block;
+    text-align: center;
+}
+
+a#back {
+    border: 3px solid #2196f3;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #2196f3;
+    font-family: 'Source Code Pro', monospace;
+}
+
+a#back:hover {
+    border: 3px solid #2196f3;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background: #2196f3;
+    font-family: 'Source Code Pro', monospace;
+    box-shadow: 0 0 15px #2196f3;
+}
+
+input[type="submit"]#hitung {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2196f3;
+    font-family: 'Varela Round', sans-serif;
+    padding: 8px 15px 8px 15px;
+    border-radius: 50px;
+    font-size: 15px;
+    border: none;
+    width: 120px;
+    cursor: pointer;
+}
+
+input[type="submit"]#hitung:hover {
+    box-shadow: 0 0 10px #2196f3, 0 0 10px #2196f3;
+}
+
+@media screen and (max-width: 1000px) {
+    .card {
+        width: 40%;
+    }
+    a#back {
+        font-size: 13px;
+    }
+    h1 {
+        margin-block-start: 0.25em;
+        margin-block-end: 0.25em;
+    }
+    #hasil {
+        font-size: 20px;
+    }
+    .container {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .container {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .heading {
+        padding: 20px;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .card {
+        width: 80%;
+    }
+    a#back {
+        font-size: 13px;
+    }
+    h1 {
+        margin-block-start: 0.25em;
+        margin-block-end: 0.25em;
+    }
+    #hasil {
+        font-size: 20px;
+    }
+}

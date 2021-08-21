@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #072638;
+    display: flex;
+    justify-content: center;
+}
+
+#clock {
+    padding: 20px 0;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 0 0 25px #fff;
+    cursor: default;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+img {
+    width: 199.5px;
+    padding: 10px 0;
+}
+
+.info {
+    color: #fff;
+    font-family: 'Trispace', sans-serif;
+    padding-bottom: 2px;
+    cursor: default;
+}
+
+a.button {
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    font-size: 18px;
+    overflow: hidden;
+    transition: 0.2s;
+    font-family: 'Russo One', sans-serif;
+    padding: 8px 20px 8px 20px;
+}
+
+a.button:hover	{
+    color: #fff;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 10px #2196f3;
+    border-radius: 24px;
+}
+
+.built {
+    color: #fff;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 8px;
+    cursor: default;
+}
+
+.copyright  {
+    color: #fff;
+    font-family: 'Trispace', sans-serif;
+    font-size: 11px;
+    text-align: center;
+    cursor: default;
+}
+
+.git {
+    color: #fff;
+    font-size: 35px;
+    margin-right: 5px;
+}
+
+.ig {
+    color: #fff;
+    font-size: 35px;
+    margin-left: 5px;
+}
+
+.lang:hover {
+    text-shadow: 0 0 40px #fc5c65;
+    color: #fc5c65;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: 1s;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    padding: 0;
+    color:#072638;
+    font-size: 55px;
+    cursor: default;
+}
+
+h1 span {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    animation: animate 2s linear infinite;
+}
+
+h1 span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+h1 span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: 1.25s;
+}
+
+h1 span:nth-child(7) {
+    animation-delay: 1.5s;
+}
+
+h1 span:nth-child(8) {
+    animation-delay: 1.75s;
+}
+
+h1 span:nth-child(9) {
+    animation-delay: 2s;
+}
+
+@keyframes animate {
+    0%, 100% {
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 3px #fff,
+                    0 0 10px #fff;
+    }
+    5%, 95% {
+        color: #072638;
+        filter: blur(0px);
+        text-shadow: 0 0 10px none;
+    }
+}
+
+@media all and (max-width: 320px) {
+    h1 {
+        font-size: 45px;
+    }
+    #clock {
+        font-size: 14px;
+    }
+    img {
+        width: 150px;
+    }   
+}
+
+@media all and (max-width: 375px) {
+    h1 {
+        font-size: 53px;
+    }
+    img {
+        width: 165px;
+    }
+}
+
+@media all and (max-width: 425px) {
+    img {
+        width: 175px;
+    }
+}
