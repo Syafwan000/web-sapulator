@@ -1,4 +1,4 @@
-## Web Sapulator
+## SapuLator
 
 <img src="img/logo.png" width="200">
 
